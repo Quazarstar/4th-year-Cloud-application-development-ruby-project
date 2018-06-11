@@ -1,0 +1,36 @@
+	<%= form_for([@patient,@patient.visits.build])do |f|  %>
+	<p>
+		<%= f.label :date, class: "h4" %> <br />
+		<%= f.text_field :date , class: "form-control" %>
+	</p>
+
+	<p>
+		<%= f.label :infection %> <br />
+		<%= f.text_field :infection, class: "form-control" %>
+	</p>
+
+	<p>
+		<%= f.label :injury %> <br />
+		<%= f.text_field :injury, class: "form-control" %>
+	</p>
+
+	<p>
+		<%= f.label :observations %> <br />
+		<%= f.text_field :observations, class: "form-control" %>
+	</p>
+
+	<p>
+		<%= f.label :hospital_request %> <br />
+		<%= f.text_field :hospital_request, class: "form-control" %>
+	</p>
+
+	<p>
+		<%= f.label :condition %> <br />
+		<%= f.text_field :condition, class: "form-control" %>
+	</p>
+
+	<p>
+		<!--Buttons in Rails From: https://stackoverflow.com/questions/26499620/how-to-make-a-rails-form-for-submit-button-a-bootstrap-button -->
+		<%= f.submit :Submit, class: 'btn btn-sm btn-success'%>
+	</p>
+	<% end %>

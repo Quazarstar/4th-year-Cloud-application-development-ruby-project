@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @patient.name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @patient.dob %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @patient.address %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @patient.phone %>
+</p>
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
+
+<!-- Below code renders the visit class from _form.html.erb of visits folder into this view -->
+	<h2>Visits</h2>
+	<hr>
+	<%= render @patient.visits %> 
+
+	<h2> Add Visit:</h2>
+	<%= render 'visits/form' %> 
+
+

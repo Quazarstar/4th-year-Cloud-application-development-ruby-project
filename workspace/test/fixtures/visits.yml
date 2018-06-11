@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  infection: MyString
+  injury: MyString
+  observations: MyString
+  hospital_request: MyString
+  condition: MyString
+  patient: one
+
+two:
+  date: MyString
+  infection: MyString
+  injury: MyString
+  observations: MyString
+  hospital_request: MyString
+  condition: MyString
+  patient: two
